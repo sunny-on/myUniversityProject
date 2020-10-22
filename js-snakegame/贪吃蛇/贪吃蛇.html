@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #cccccc;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--画除地图，设置样式-->
+<div class="map"></div>
+<script src="food.js"></script>//顺序固定
+<script src="Snake.js"></script>
+<script src="Game.js"></script>
+<script>
+
+    //初始化游戏对象
+    var gm=new Game(document.querySelector(".map"));
+    //开始游戏
+    gm.init();
+
+
+
+    //外部测试代码
+    // var fd = new Food();
+    // fd.init(document.querySelector(".map"));
+    // var snake = new Snake();
+    // setInterval(function () {
+    //     snake.init(document.querySelector(".map"));
+    //     snake.move(fd,document.querySelector(".map"));
+    // },150)
+
+
+
+
+    // console.log(fd.width);
+</script>
+
+</body>
+</html>
